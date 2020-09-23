@@ -17,3 +17,7 @@ proc openURLLikeApp(url : string) : void =
     discard  osproc.execCmd(path)
  
  ```
+
+## License
+
+MIT
