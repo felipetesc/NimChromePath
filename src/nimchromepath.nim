@@ -2,14 +2,13 @@ import os
 
 proc exists(p: string): bool =
   try:
-    echo getFileInfo(p)
+    discard getFileInfo(p)
     result = true
   except OSError:
     result = false
 
 # get default windows paths
 proc getWinPaths(): seq[string] =
-  echo "entering inside getWinPaths"
   let uncheckedPaths = @["C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "C:\\Program Files (x86)\\Google\\Application\\chrome.exe", "C:\\Users\\UserName\\AppDataLocal\\Google\\Chrome\\chrome.exe"]
   result = @[]
   var found = false
