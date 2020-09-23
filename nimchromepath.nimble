@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.3"
+version       = "0.1.5"
 author        = "felipetesc"
 description   = "Thin lib to find if chrome exists on Windows, Mac, or Linux"
 license       = "MIT"
