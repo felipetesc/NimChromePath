@@ -7,7 +7,7 @@
 
 #import unittest
 
-import NimChromePath/getpaths
+import nimchromepath
 
 proc testGetPaths():void =
   var paths = getpaths()
