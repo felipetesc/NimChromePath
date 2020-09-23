@@ -1,6 +1,18 @@
 # NimChromePath
 Gets the chrome paths on Windows and *Nix Systems 
 
+[![nimble](https://raw.githubusercontent.com/yglukhov/nimble-tag/master/nimble.png)](https://github.com/yglukhov/nimble-tag)
+
+## License
+
+[![MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+## Installation 
+
+```
+nimble install nimchromepath
+```
+
 ## Available procedures
 
 Get paths only to Windows Systems
@@ -38,6 +50,4 @@ proc openURLLikeApp(url : string) : void =
  
  ```
 
-## License
 
-MIT
