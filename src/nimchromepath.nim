@@ -35,9 +35,13 @@ export getNixPaths
 
 proc getpaths(): seq[string] =
   result = @[]
-  when defined windows:
-    result = getWinPaths()
-  elif defined linux:
-    result = getNixPaths()
+  try:
+    when defined windows:
+      result = getWinPaths()
+    elif defined linux:
+      result = getNixPaths()
+  except:
+    writeFile("error.log", "No paths found. Google Chrome isn't installed, or the program can't find it.")
+
 
 export getpaths
