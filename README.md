@@ -38,7 +38,7 @@ Open Google Chrome in app mode
 
 ```
 import osproc
-import NimChromePath/getpaths
+import nimchromepath
 
 proc openURLLikeApp(url : string) : void =
   var paths = getpaths()
