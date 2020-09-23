@@ -6,7 +6,6 @@
 import os
 
 proc exists(p: string): bool =
-  echo "entering inside exists"
   try:
     echo getFileInfo(p)
     result = true
