@@ -41,12 +41,14 @@ import osproc
 import NimChromePath/getpaths
 
 proc openURLLikeApp(url : string) : void =
-  var paths = FindChromeLib.getChromePaths()
+  var paths = getpaths()
   if paths.len > 0 :
     var path = paths[0]
     path =  path & " --app=" & url
     echo path
     discard  osproc.execCmd(path)
+
+openURLLikeApp("https://github.com/felipetesc/NimChromePath")
  
  ```
 
