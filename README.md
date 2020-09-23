@@ -1,6 +1,26 @@
 # NimChromePath
 Gets the chrome paths on Windows and *Nix Systems 
 
+# Available procedures
+
+Get paths only to Windows Systems
+```
+proc getWinPaths(): seq[string]
+
+```
+
+Get paths only to *Nix Systems
+```
+proc getNixPaths(): seq[string]
+
+```
+
+Get paths on Windows or on *Nix Systems
+```
+proc getpaths(): seq[string]
+
+```
+
 ## Example:
 Open Google Chrome in app mode
 
