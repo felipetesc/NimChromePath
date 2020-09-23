@@ -1,7 +1,7 @@
 # NimChromePath
 Gets the chrome paths on Windows and *Nix Systems 
 
-# Available procedures
+## Available procedures
 
 Get paths only to Windows Systems
 ```
