@@ -28,7 +28,7 @@ export getWinPaths
 
 # get default linux paths
 proc getNixPaths(): seq[string] =
-  let uncheckedPaths = @["/usr/local/sbin", "/usr/local/bin", "/usr/sbin", "/usr/bin", "/sbin", "/bin"]
+  let uncheckedPaths = @["/usr/local/sbin/chrome", "/usr/local/bin/chrome", "/usr/sbin/chrome", "/usr/bin/chrome", "/sbin/chrome", "/bin/chrome"]
   result = @[]
   var found = false
   for index in 0 ..< uncheckedPaths.len:
