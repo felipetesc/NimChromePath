@@ -13,7 +13,7 @@ Gets the chrome paths on Windows and *Nix Systems
 nimble install nimchromepath
 ```
 
-## Available procedures
+## Documentation (available procs)
 
 Get paths only to Windows Systems
 ```
